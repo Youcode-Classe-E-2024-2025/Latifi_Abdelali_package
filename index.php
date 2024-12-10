@@ -17,29 +17,46 @@
         <h3 class="px-3 font-bold">packages/authors</h3>
     </div>
     </header>
-    <section>
-        <div class="border-solid border-cyan-700 border-2 rounded" >
-        <label for="">add package</label>
-        <form action="add.php" method="post">
-            <label for="">packagename</label><br>
-            <input type="text" name="packagename"><br>
-            <label for="">packagedescreption</label><br>
-            <textarea name="packagedescreption"></textarea><br>
-            <label for="">created at</label><br>
-            <input type="date" name="created_at"><br>
-            <button class="bg-cyan-300 border-cyan-800 border-2 rounded font-bold" type="submit">submit</button>
+    <section class="flex justify-center gap-20 p-6">
+    <!-- Add Package Form -->
+    <div class="border-4 border-solid border-cyan-700 rounded-lg p-6 max-w-lg w-full">
+        <label class="block text-xl font-semibold text-cyan-700 mb-4">Add Package</label>
+        <form action="add.php" method="post" class="space-y-4">
+            <div>
+                <label for="packagename" class="block text-sm font-medium text-cyan-700">Package Name</label>
+                <input type="text" name="packagename" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            <div>
+                <label for="packagedescreption" class="block text-sm font-medium text-cyan-700">Package Description</label>
+                <textarea name="packagedescreption" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"></textarea>
+            </div>
+            <div>
+                <label for="created_at" class="block text-sm font-medium text-cyan-700">Created At</label>
+                <input type="date" name="created_at" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            <div>
+                <button type="submit" class="w-full py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-md border-2 border-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-500">Submit</button>
+            </div>
         </form>
-        </div>
-        <br>
+    </div>
 
-        <label for="">add authors</label>
-        <form action="">
-            <label for="">authorname</label><br>
-            <input type="text"><br>
-            <label for="">email</label><br>
-            <input type="text">
+    <div class="border-4 border-solid border-cyan-700 rounded-lg p-6 max-w-lg w-full">
+        <label class="block text-xl font-semibold text-cyan-700 mb-4">Add Authors</label>
+        <form action="" method="post" class="space-y-4">
+            <div>
+                <label for="authorname" class="block text-sm font-medium text-cyan-700">Author Name</label>
+                <input type="text" name="authorname" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-cyan-700">Email</label>
+                <input type="email" name="email" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            <div>
+                <button type="submit" class="w-full py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-md border-2 border-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-500">Submit</button>
+            </div>
         </form>
-    </section>
+    </div>
+</section>
 
     
     

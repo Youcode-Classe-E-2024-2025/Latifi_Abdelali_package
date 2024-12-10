@@ -10,5 +10,7 @@ $requete = "INSERT INTO allpackages (package_name, packages_descreption, created
     header("location:aff_allpckg.php");
  }
 
+ 
+
 ?>
 
