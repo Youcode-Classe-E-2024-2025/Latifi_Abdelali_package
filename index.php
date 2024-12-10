@@ -12,7 +12,7 @@
     <h1 class="font-extrabold text-3xl" >Mypackages</h1>
     </div>
     <div class="flex text-xl justify-between text-cyan-900	">
-        <a href="affichage.php"><h3 class="px-3 font-bold">allpackages</h3></a>
+        <a href="aff_allpckg.php"><h3 class="px-3 font-bold">allpackages</h3></a>
         <h3 class="px-3 font-bold">authors</h3>
         <h3 class="px-3 font-bold">packages/authors</h3>
     </div>
