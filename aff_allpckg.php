@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tableau des Packages</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>tableaux</h1>
-    <table>
-        <tr>
-            <th>id</th>
-            <th>package name</th>
-            <th>package descreption</th>            
-            <th>created at</th>
-        </tr>
-    <?php
-    require 'connexion.php';
-    $requete = 'SELECT * FROM allpackages';
-    $query = mysqli_query($con,$requete);
-    while($rows = mysqli_fetch_assoc($query)){
-        $id = $rows['id'];
-        echo "<tr>";
-        echo "<td>". $rows['id']."</td>";
-        echo "<td>". $rows['package_name']."</td>";
-        echo "<td>". $rows['packages_descreption']."</td>";
-        echo "<td>". $rows['created_at']."</td>";
-        echo "</tr>";
-    }
-    ?>
-    </table>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-semibold text-cyan-700 mb-6">Tableaux des Packages</h1>
+        <div class="overflow-x-auto bg-white rounded-lg shadow-md">
+            <table class="min-w-full table-auto">
+                <thead>
+                    <tr class="bg-cyan-600 text-white">
+                        <th class="px-4 py-2 text-left">ID</th>
+                        <th class="px-4 py-2 text-left">Nom du Package</th>
+                        <th class="px-4 py-2 text-left">Description du Package</th>
+                        <th class="px-4 py-2 text-left">Date de Création</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    require 'connexion.php';
+                    $requete = 'SELECT * FROM allpackages';
+                    $query = mysqli_query($con, $requete);
+                    while($rows = mysqli_fetch_assoc($query)){
+                        $id = $rows['id'];
+                        echo "<tr class='border-t border-gray-200 hover:bg-cyan-50'>";
+                        echo "<td class='px-4 py-2'>" . $rows['id'] . "</td>";
+                        echo "<td class='px-4 py-2'>" . $rows['package_name'] . "</td>";
+                        echo "<td class='px-4 py-2'>" . $rows['packages_descreption'] . "</td>";
+                        echo "<td class='px-4 py-2'>" . $rows['created_at'] . "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
