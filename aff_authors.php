@@ -6,7 +6,17 @@
     <title>Tableau des auteurs</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body>
+<header class="flex justify-between bg-cyan-300 p-7">
+    <div>
+    <h1 class="font-extrabold text-3xl" >Mypackages</h1>
+    </div>
+    <div class="flex text-xl justify-between text-cyan-900	">
+        <a href="index.php"><h3 class="px-3 font-bold">HOME</h3></a>
+        <a href="aff_allpckg.php"><h3 class="px-3 font-bold">ALLPACKAGES</h3></a>
+        <h3 class="px-3 font-bold">PACKAGES/AUTHORS</h3>
+    </div>
+    </header>
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-semibold text-cyan-700 mb-6">Tableaux des Auteurs</h1>
         

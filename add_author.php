@@ -6,7 +6,7 @@ $rqt = "INSERT INTO authors (author_name, email)
 VALUES ('$author_name', '$author_email')";
 $res = mysqli_query($con,$rqt);
 if(isset($res)){
-    header("location:aff_authors.php");
+    header("location:index.php");
 }
 
 
