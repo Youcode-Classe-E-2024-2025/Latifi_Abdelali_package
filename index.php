@@ -14,13 +14,17 @@
     <div class="flex text-xl justify-between text-cyan-900	">
         <a href="aff_allpckg.php"><h3 class="px-3 font-bold">allpackages</h3></a>
         <a href="aff_authors.php"><h3 class="px-3 font-bold">Authors</h3></a>
-        <h3 class="px-3 font-bold">packages/authors</h3>
+        <a href="aff_pckg_author.php"><h3 class="px-3 font-bold">packages/authors</h3></a>
     </div>
     </header>
     <section class="flex justify-center gap-20 p-6">
     <div class="border-4 border-solid border-cyan-700 rounded-lg p-6 max-w-lg w-full">
         <label class="block text-xl font-semibold text-cyan-700 mb-4">Add Package</label>
         <form action="add.php" method="post" class="space-y-4">
+            <div>
+                <label for="author_name" class="block text-sm font-medium text-cyan-700">author Name</label>
+                <input type="text" name="author_name" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
             <div>
                 <label for="packagename" class="block text-sm font-medium text-cyan-700">Package Name</label>
                 <input type="text" name="packagename" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">

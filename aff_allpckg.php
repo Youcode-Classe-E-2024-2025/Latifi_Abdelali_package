@@ -23,10 +23,11 @@
             <table class="min-w-full table-auto">
                 <thead>
                     <tr class="bg-cyan-600 text-white">
-                        <th class="px-4 py-2 text-left">ID</th>
                         <th class="px-4 py-2 text-left">Nom du Package</th>
                         <th class="px-4 py-2 text-left">Description du Package</th>
                         <th class="px-4 py-2 text-left">Date de Création</th>
+                        <th class="px-4 py-2 text-left">name author</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -37,10 +38,10 @@
                     while($rows = mysqli_fetch_assoc($query)){
                         $id = $rows['id'];
                         echo "<tr class='border-t border-gray-200 hover:bg-cyan-50'>";
-                        echo "<td class='px-4 py-2'>" . $rows['id'] . "</td>";
                         echo "<td class='px-4 py-2'>" . $rows['package_name'] . "</td>";
                         echo "<td class='px-4 py-2'>" . $rows['packages_descreption'] . "</td>";
                         echo "<td class='px-4 py-2'>" . $rows['created_at'] . "</td>";
+                        echo "<td class='px-4 py-2'>" . $rows['author_name'] . "</td>";
                         echo "</tr>";
                     }
                     ?>
