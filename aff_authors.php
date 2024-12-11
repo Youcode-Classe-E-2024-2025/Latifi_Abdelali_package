@@ -12,13 +12,13 @@
     <h1 class="font-extrabold text-3xl" >Mypackages</h1>
     </div>
     <div class="flex text-xl justify-between text-cyan-900	">
-        <a href="index.php"><h3 class="px-3 font-bold">HOME</h3></a>
-        <a href="aff_allpckg.php"><h3 class="px-3 font-bold">ALLPACKAGES</h3></a>
-        <h3 class="px-3 font-bold">PACKAGES/AUTHORS</h3>
+        <a href="index.php"><h3 class="px-3 font-bold">home</h3></a>
+        <a href="aff_allpckg.php"><h3 class="px-3 font-bold">allpackages</h3></a>
+        <h3 class="px-3 font-bold">packages/authors</h3>
     </div>
     </header>
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-semibold text-cyan-700 mb-6">Tableaux des Auteurs</h1>
+        <h1 class="text-3xl font-semibold text-cyan-700 mb-6">Authors</h1>
         
         <div class="overflow-x-auto bg-white rounded-lg shadow-md">
             <table class="min-w-full table-auto">

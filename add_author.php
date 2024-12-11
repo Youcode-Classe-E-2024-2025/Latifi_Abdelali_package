@@ -9,15 +9,4 @@ if(isset($res)){
     header("location:index.php");
 }
 
-
-
-
-
-
-
-
-
-
-
-
 ?>

@@ -12,9 +12,9 @@
     <h1 class="font-extrabold text-3xl" >Mypackages</h1>
     </div>
     <div class="flex text-xl justify-between text-cyan-900	">
-        <a href="aff_allpckg.php"><h3 class="px-3 font-bold">ALLPACKAGES</h3></a>
-        <a href="aff_authors.php"><h3 class="px-3 font-bold">AUTHORS</h3></a>
-        <h3 class="px-3 font-bold">PACKAGES/AUTHORS</h3>
+        <a href="aff_allpckg.php"><h3 class="px-3 font-bold">allpackages</h3></a>
+        <a href="aff_authors.php"><h3 class="px-3 font-bold">Authors</h3></a>
+        <h3 class="px-3 font-bold">packages/authors</h3>
     </div>
     </header>
     <section class="flex justify-center gap-20 p-6">
