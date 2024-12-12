@@ -16,6 +16,7 @@
         <a href="aff_authors.php"><h3 class="px-3 font-bold">Authors</h3></a>
         <a href="aff_pckg_author.php"><h3 class="px-3 font-bold">packages/authors</h3></a>
         <a href="aff_version.php"><h3 class="px-3 font-bold">versions</h3></a>
+        <a href="aff_pckg_version.php"><h3 class="px-3 font-bold text-lg">package.versions</h3></a>
     </div>
     </header>
     <div class="container mx-auto px-4 py-8">
