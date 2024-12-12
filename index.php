@@ -62,21 +62,31 @@
         </form>
     </div>
     <div class="border-4 border-solid border-cyan-700 rounded-lg p-6 max-w-lg w-full">
-        <label class="block text-xl font-semibold text-cyan-700 mb-4">Add version</label>
-        <form action="add_version.php" method="post" class="space-y-4">
-            <div>
-                <label for="Package_Name" class="block text-sm font-medium text-cyan-700">Package Name</label>
-                <input type="text" name="Package_Name" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
-            </div>
-            <div>
-                <label for="version" class="block text-sm font-medium text-cyan-700">version</label>
-                <input type="text" name="version" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
-            </div>
-            <div>
-                <button type="submit" class="w-full py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-md border-2 border-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-500">Submit</button>
-            </div>
-        </form>
-    </div>
+    <label class="block text-xl font-semibold text-cyan-700 mb-4">Add version</label>
+    <form action="add_version.php" method="post" class="space-y-4">
+        <div>
+            <label for="Package_Name" class="block text-sm font-medium text-cyan-700">Package Name</label>
+            <select name="Package_Name" id="Package_Name" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500" required>
+                <?php
+                require 'connexion.php';
+                $requete = 'SELECT package_name FROM allpackages'; 
+                $query = mysqli_query($con, $requete);
+                while ($rows = mysqli_fetch_assoc($query)) {
+                    echo "<option value='" . $rows['package_name'] . "'>" . $rows['package_name']. "</option>";
+                }
+                ?>
+            </select>
+        </div>
+        <div>
+            <label for="version" class="block text-sm font-medium text-cyan-700">Version</label>
+            <input type="text" name="version" id="version" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500" required>
+        </div>
+        <div>
+            <button type="submit" class="w-full py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-md border-2 border-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-500">Submit</button>
+        </div>
+    </form>
+</div>
+
 </section>
 
     

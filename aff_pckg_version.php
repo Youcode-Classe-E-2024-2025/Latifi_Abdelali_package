@@ -41,6 +41,7 @@
                  echo "<td class='px-4 py-2'>" . $row['version'] . "</td>";  
                  echo "</tr>";
              }
+             
         ?>
 </div>
 </table>
