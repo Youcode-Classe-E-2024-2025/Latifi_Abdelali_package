@@ -25,11 +25,11 @@
                 <thead>
                     <tr class="bg-cyan-600 text-white">
                         <th class="px-4 py-2 text-left">ID</th>
-                        <th class="px-4 py-2 text-left">Nom de l'Auteur</th>
-                        <th class="px-4 py-2 text-left">Email</th>
+                        <th class="px-4 py-2 text-left">packagename</th>
+                        <th class="px-4 py-2 text-left">version</th>
                     </tr>
                 </thead>
-                <tbody>
+                <body>
                     <?php
                     require 'connexion.php';
                     $requete = 'SELECT * FROM version';
@@ -43,7 +43,7 @@
                         echo "</tr>";
                     }
                     ?>
-                </tbody>
+                </body>
             </table>
         </div>
     </div>

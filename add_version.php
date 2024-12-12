@@ -6,5 +6,5 @@ $rqt = "INSERT INTO version (Package_Name, version)
 VALUES ('$Package_Name', '$package_version')";
 $res = mysqli_query($con,$rqt);
 if(isset($res)){
-    header("loction:aff_version.php");
+    header("aff_version.php");
 }

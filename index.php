@@ -15,6 +15,7 @@
         <a href="aff_allpckg.php"><h3 class="px-3 font-bold">allpackages</h3></a>
         <a href="aff_authors.php"><h3 class="px-3 font-bold">Authors</h3></a>
         <a href="aff_pckg_author.php"><h3 class="px-3 font-bold">packages/authors</h3></a>
+        <a href="aff_version.php"><h3 class="px-3 font-bold">versions</h3></a>
     </div>
     </header>
     <section class="flex justify-center gap-20 p-6">
