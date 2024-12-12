@@ -27,10 +27,12 @@
                         <th class="px-4 py-2 text-left">Description du Package</th>
                         <th class="px-4 py-2 text-left">Date de Création</th>
                         <th class="px-4 py-2 text-left">name author</th>
+                        <th class="px-4 py-2 text-left text-center">delete</th>
 
                     </tr>
                 </thead>
                 <tbody>
+
                     <?php
                     require 'connexion.php';
                     $requete = 'SELECT * FROM allpackages';
@@ -42,7 +44,7 @@
                         echo "<td class='px-4 py-2'>" . $rows['packages_descreption'] . "</td>";
                         echo "<td class='px-4 py-2'>" . $rows['created_at'] . "</td>";
                         echo "<td class='px-4 py-2'>" . $rows['author_name'] . "</td>";
-                        echo "</tr>";
+                        echo "<td class='flex justify-center items-center'><a href='delete.php?id=" . $id . "'><button class='bg-red-600 text-white font-bold text-xl px-2 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 transition duration-300 ease-in-out transform hover:scale-105'>-</button></a></td>";                        echo "</tr>";
                     }
                     ?>
                 </tbody>
