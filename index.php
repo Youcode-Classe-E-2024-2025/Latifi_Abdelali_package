@@ -61,7 +61,7 @@
     </div>
     <div class="border-4 border-solid border-cyan-700 rounded-lg p-6 max-w-lg w-full">
         <label class="block text-xl font-semibold text-cyan-700 mb-4">Add version</label>
-        <form action="add_author.php" method="post" class="space-y-4">
+        <form action="add_version.php" method="post" class="space-y-4">
             <div>
                 <label for="Package_Name" class="block text-sm font-medium text-cyan-700">Package Name</label>
                 <input type="text" name="Package_Name" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
