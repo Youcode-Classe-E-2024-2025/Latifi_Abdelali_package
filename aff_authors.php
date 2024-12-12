@@ -30,7 +30,7 @@
                         <th class="px-4 py-2 text-left">Email</th>
                     </tr>
                 </thead>
-                <tbody>
+                <div>
                     <?php
                     require 'connexion.php';
                     $requete = 'SELECT * FROM authors';
@@ -44,7 +44,7 @@
                         echo "</tr>";
                     }
                     ?>
-                </tbody>
+                </div>
             </table>
         </div>
     </div>

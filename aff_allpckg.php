@@ -32,7 +32,7 @@
 
                     </tr>
                 </thead>
-                <tbody>
+                <div>
 
                     <?php
                     require 'connexion.php';
@@ -48,7 +48,7 @@
                         echo "<td class='flex justify-center items-center'><a href='delete.php?id=" . $id . "'><button class='bg-red-600 text-white font-bold text-xl px-2 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 transition duration-300 ease-in-out transform hover:scale-105'>-</button></a></td>";                        echo "</tr>";
                     }
                     ?>
-                </tbody>
+                </div>
             </table>
         </div>
     </div>

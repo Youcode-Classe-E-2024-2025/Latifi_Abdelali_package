@@ -29,7 +29,7 @@
                         <th class="px-4 py-2 text-left">version</th>
                     </tr>
                 </thead>
-                <body>
+                <div>
                     <?php
                     require 'connexion.php';
                     $requete = 'SELECT * FROM version';
@@ -43,7 +43,7 @@
                         echo "</tr>";
                     }
                     ?>
-                </body>
+                </div>
             </table>
         </div>
     </div>

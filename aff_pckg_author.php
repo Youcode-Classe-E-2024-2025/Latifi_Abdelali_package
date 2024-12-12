@@ -29,26 +29,26 @@
                     <th class="px-4 py-2 text-left">Package Name</th>
                 </tr>
             </thead>
-            <tbody>
-            <?php
-require 'connexion.php';
-
-$requete = 'SELECT authors.id, authors.author_name, authors.email, allpackages.package_name
-            FROM authors 
-            inner JOIN allpackages ON authors.author_name = allpackages.author_name';  
-
-$query = mysqli_query($con, $requete);
-
-while ($row = mysqli_fetch_assoc($query)) {
-    echo "<tr class='border-t border-gray-200 hover:bg-cyan-50'>";
-    echo "<td class='px-4 py-2'>" . $row['author_name'] . "</td>";  
-    echo "<td class='px-4 py-2'>" . $row['package_name'] . "</td>";  
-    echo "</tr>";
-}
-?>
-            </tbody>
-        </table>
-    </div>
+            <div>
+        <?php
+             require 'connexion.php';
+             
+             $requete = 'SELECT authors.id, authors.author_name, authors.email, allpackages.package_name
+                         FROM authors 
+                         inner JOIN allpackages ON authors.author_name = allpackages.author_name';  
+             
+             $query = mysqli_query($con, $requete);
+             
+             while ($row = mysqli_fetch_assoc($query)) {
+                 echo "<tr class='border-t border-gray-200 hover:bg-cyan-50'>";
+                 echo "<td class='px-4 py-2'>" . $row['author_name'] . "</td>";  
+                 echo "<td class='px-4 py-2'>" . $row['package_name'] . "</td>";  
+                 echo "</tr>";
+             }
+        ?>
+</div>
+</table>
+</div>
 </div>
 </body>
 </html>
