@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php include 'add.php'?>
+<?php include 'add_author.php'?>
     <header class="flex justify-between bg-cyan-300 p-7">
     <div>
     <h1 class="font-extrabold text-3xl" >Mypackages</h1>
@@ -48,7 +49,7 @@
 
     <div class="border-4 border-solid border-cyan-700 rounded-lg p-6 max-w-lg w-full">
         <label class="block text-xl font-semibold text-cyan-700 mb-4">Add Authors</label>
-        <form action="add_author.php" method="post" class="space-y-4">
+        <form action="#" method="post" class="space-y-4">
             <div>
                 <label for="authorname" class="block text-sm font-medium text-cyan-700">Author Name</label>
                 <input type="text" name="authorname" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
@@ -58,7 +59,7 @@
                 <input type="email" name="email" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
             </div>
             <div>
-                <button type="submit" class="w-full py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-md border-2 border-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-500">Submit</button>
+                <button type="submit" name="submit2" class="w-full py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-md border-2 border-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-500">Submit</button>
             </div>
         </form>
     </div>
