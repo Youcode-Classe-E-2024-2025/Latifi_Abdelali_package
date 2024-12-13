@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<header class="flex justify-between bg-cyan-300 p-7">
+<header class="flex justify-between bg-cyan-300 p-7 ">
     <div>
     <h1 class="font-extrabold text-3xl" >Mypackages</h1>
     </div>
