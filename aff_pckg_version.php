@@ -16,6 +16,7 @@
         <a href="aff_allpckg.php"><h3 class="px-3 font-bold">allpackages</h3></a>
         <a href="aff_authors.php"><h3 class="px-3 font-bold">Authors</h3></a>
         <a href="aff_version.php"><h3 class="px-3 font-bold">versions</h3></a>
+        <a href="aff_pckg_author.php"><h3 class="px-3 font-bold text-lg">packages/authors</h3></a>
     </div>
 </header>
 <div class="container mx-auto px-4 py-8">
@@ -25,8 +26,8 @@
         <table class="min-w-full table-auto">
             <thead>
                 <tr class="bg-cyan-600 text-white">
-                    <th class="px-4 py-2 text-left">author</th>
                     <th class="px-4 py-2 text-left">Package Name</th>
+                    <th class="px-4 py-2 text-left">version</th>
                 </tr>
             </thead>
             <div>
