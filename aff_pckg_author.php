@@ -7,16 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<header class="flex justify-between bg-cyan-300 p-7">
-    <div>
+<header class="flex justify-between bg-cyan-300 p-7 max-lg:block">
+<div>
         <h1 class="font-extrabold text-3xl" >Mypackages</h1>
     </div>
-    <div class="flex text-xl justify-between text-cyan-900">
-        <a href="index.php"><h3 class="px-3 font-bold">home</h3></a>
-        <a href="aff_allpckg.php"><h3 class="px-3 font-bold">allpackages</h3></a>
-        <a href="aff_authors.php"><h3 class="px-3 font-bold">Authors</h3></a>
-        <a href="aff_version.php"><h3 class="px-3 font-bold">versions</h3></a>
-        <a href="aff_pckg_version.php"><h3 class="px-3 font-bold text-lg">package/versions</h3></a>
+    <div class="flex text-xl justify-between text-cyan-900 max-lg:mt-2.5 max-md:block">
+        <a href="index.php"><h3 class="px-3 font-bold max-lg:text-base">home</h3></a>
+        <a href="aff_allpckg.php"><h3 class="px-3 font-bold max-lg:text-base">allpackages</h3></a>
+        <a href="aff_authors.php"><h3 class="px-3 font-bold max-lg:text-base">Authors</h3></a>
+        <a href="aff_version.php"><h3 class="px-3 font-bold max-lg:text-base">versions</h3></a>
+        <a href="aff_pckg_version.php"><h3 class="px-3 font-bold text-lg max-lg:text-base">package/versions</h3></a>
     </div>
 </header>
 <div class="container mx-auto px-4 py-8">

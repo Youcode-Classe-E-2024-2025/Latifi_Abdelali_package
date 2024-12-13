@@ -9,19 +9,19 @@
 <body>
 <?php include 'add.php'?>
 <?php include 'add_author.php'?>
-    <header class="flex justify-between bg-cyan-300 p-7">
+    <header class="flex justify-between bg-cyan-300 p-7 max-lg:block">
     <div>
     <h1 class="font-extrabold text-3xl" >Mypackages</h1>
     </div>
-    <div class="flex text-xl justify-between text-cyan-900	">
-        <a href="aff_allpckg.php"><h3 class="px-3 font-bold text-lg">allpackages</h3></a>
-        <a href="aff_authors.php"><h3 class="px-3 font-bold text-lg">Authors</h3></a>
-        <a href="aff_pckg_author.php"><h3 class="px-3 font-bold text-lg">packages/authors</h3></a>
-        <a href="aff_version.php"><h3 class="px-3 font-bold text-lg">versions</h3></a>
-        <a href="aff_pckg_version.php"><h3 class="px-3 font-bold text-lg">package/versions</h3></a>
+    <div class="flex text-xl justify-between text-cyan-900 max-lg:mt-2.5 max-md:block">
+        <a href="aff_allpckg.php"><h3 class="px-3 font-bold text-lg max-lg:text-base ">allpackages</h3></a>
+        <a href="aff_authors.php"><h3 class="px-3 font-bold text-lg max-lg:text-base ">Authors</h3></a>
+        <a href="aff_pckg_author.php"><h3 class="px-3 font-bold text-lg max-lg:text-base ">packages/authors</h3></a>
+        <a href="aff_version.php"><h3 class="px-3 font-bold text-lg max-lg:text-base ">versions</h3></a>
+        <a href="aff_pckg_version.php"><h3 class="px-3 font-bold text-lg max-lg:text-base ">package/versions</h3></a>
     </div>
     </header>
-    <section class="flex justify-center gap-20 p-6">
+    <section class="flex justify-center gap-20 p-6 max-md:block  ">
     <div class="border-4 border-solid border-cyan-700 rounded-lg p-6 max-w-lg w-full">
         <label class="block text-xl font-semibold text-cyan-700 mb-4">Add Package</label>
         <form action="#" method="post" class="space-y-4">

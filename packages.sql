@@ -47,3 +47,18 @@ version varchar(20) not null ,
  id_package int ,
  FOREIGN KEY (id_Package) REFERENCES allpackages(id)
 );
+
+
+INSERT INTO allpackages (package_name, packages_descreption, created_at, author_name)
+VALUES 
+('Laravel Framework', 'A PHP framework for building web applications.', '2024-12-13', 'Taylor Otwell'),
+('React', 'A JavaScript library for building user interfaces.', '2024-12-14', 'Facebook'),
+('Vue.js', 'A progressive JavaScript framework for building UIs.', '2024-12-15', 'Evan You');
+
+
+INSERT INTO version (Package_Name, version, id_package)
+VALUES 
+    ('Laravel Framework', '1.0.0', 57),
+    ('React', '18.2.0', 56),
+    ('Vue.js', '3.2.0', 55);
+
