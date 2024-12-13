@@ -72,7 +72,7 @@
                 $requete = 'SELECT package_name FROM allpackages'; 
                 $query = mysqli_query($con, $requete);
                 while ($rows = mysqli_fetch_assoc($query)) {
-                    echo "<option value='" . $rows['package_name'] . "'>" . $rows['package_name']. "</option>";
+                    echo "<option value='" . $rows['package_name'] . "'>" .$rows['package_name']. "</option>";
                 }
                 ?>
             </select>
