@@ -20,7 +20,7 @@
     </div>
 </header>
 <div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-semibold text-cyan-700 mb-6">Authors</h1>
+    <h1 class="text-3xl font-semibold text-cyan-700 mb-6">packages/authors</h1>
     
     <div class="overflow-x-auto bg-white rounded-lg shadow-md">
         <table class="min-w-full table-auto">

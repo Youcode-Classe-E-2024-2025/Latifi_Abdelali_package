@@ -19,13 +19,13 @@
     </div>
 </header>
 <div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-semibold text-cyan-700 mb-6">Authors</h1>
+    <h1 class="text-3xl font-semibold text-cyan-700 mb-6">packages/versions</h1>
     
     <div class="overflow-x-auto bg-white rounded-lg shadow-md">
         <table class="min-w-full table-auto">
             <thead>
                 <tr class="bg-cyan-600 text-white">
-                    <th class="px-4 py-2 text-left">Nom de l'Auteur</th>
+                    <th class="px-4 py-2 text-left">author</th>
                     <th class="px-4 py-2 text-left">Package Name</th>
                 </tr>
             </thead>
@@ -41,7 +41,7 @@
                  echo "<td class='px-4 py-2'>" . $row['version'] . "</td>";  
                  echo "</tr>";
              }
-             
+
         ?>
 </div>
 </table>
