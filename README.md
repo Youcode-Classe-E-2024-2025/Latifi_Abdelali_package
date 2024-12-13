@@ -1,4 +1,4 @@
-#gestion des packages
+##gestion des packages
 ## Description
 Une application PHP permettant de gérer et d'afficher des informations sur des packages, des auteurs et leurs versions. Cette application utilise une base de données SQL et est conçue pour une gestion simple et efficace des données.
 
